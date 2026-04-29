@@ -1,0 +1,315 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Moussa.T</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <a href="/">Moussa.T</a>
+        <ul role="list" aria-label="navigation-principal" class="nav-menu">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </nav>
+    </header>
+
+    <main>
+      <!-- SECTION HOME -->
+      <section id="home">
+        <h1>
+          I'm a <span id="carrer">Frontend developer</span> (<span
+            style="font-style: italic"
+            >Web integrator</span
+          >)
+        </h1>
+        <p>
+          I am a passionate frontend developer with a strong focus on creating
+          engaging and user-friendly web experiences. With expertise in HTML,
+          CSS, and JavaScript, I specialize in building responsive and visually
+          appealing websites that captivate users and drive results. My
+          commitment to clean code and attention to detail ensures that every
+          project I work on is not only functional but also aesthetically
+          pleasing.
+        </p>
+        <span id="call">
+          <a href="tel:+221789253009">Call me <i class="fa fa-phone"></i></a>
+        </span>
+      </section>
+
+      <!-- SECTION ABOUT -->
+      <section id="about">
+        <h2>About Me</h2>
+        <div class="personal-info">
+          <img src="Photo de profil.png" alt="Moussa.T" />
+          <article>
+            <p>
+              I am a front-end developer specialized in transforming design
+              mockups into clean, responsive, and fully functional websites
+              using HTML, CSS, Tailwind CSS, and JavaScript.
+            </p>
+            <p>
+              My main specialty is converting visual concepts into real websites
+              that faithfully respect the original design while delivering
+              strong performance in real-world conditions.
+            </p>
+            <p>
+              I pay close attention to details that are often overlooked during
+              development: spacing consistency, responsive behavior, visual
+              hierarchy, clean layout structure, readable code structure, and
+              smooth interactions.
+            </p>
+            <p>
+              My approach is different: I focus on lightweight, organized, and
+              efficient solutions to keep websites fast, performant, and
+              sustainable.
+            </p>
+            <p>
+              Beyond front-end development, I have a strong interest in SEO and
+              web visibility. I don't see a website as just a visual product,
+              but as a tool designed to be found, used, and to inspire trust.
+            </p>
+            <p>
+              I value clear communication, reliability, and respect for
+              deadlines. My goal is simple: understand the need, build with
+              precision, and deliver solid results.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <!-- SECTION SERVICES -->
+      <section id="services">
+        <h2>My Services</h2>
+        <div class="skills">
+          <div class="skill">
+            <i class="fa-solid fa-code"></i>
+            <h3>FrontEnd Development</h3>
+            <p>
+              I build modern and interactive interfaces using
+              <strong>HTML5, CSS3, JavaScript, and Tailwind CSS</strong>,
+              focusing on clean, structured, and maintainable code. Each project
+              is <strong>fully responsive</strong>, optimized for
+              <strong>mobile, tablet, and desktop</strong> devices.
+            </p>
+          </div>
+          <div class="skill">
+            <i class="fa-solid fa-palette"></i>
+            <h3>Design Integration</h3>
+            <p>
+              I convert <strong>Figma designs</strong> into clean and
+              <strong>responsive HTML/CSS websites</strong>, ensuring a faithful
+              translation of the original mockup into a fully functional
+              interface, focusing on <strong>pixel-perfect integration</strong>.
+            </p>
+          </div>
+          <div class="skill">
+            <i class="fa-solid fa-chart-line"></i>
+            <h3>SEO Optimization</h3>
+            <p>
+              I build websites with a strong focus on semantic HTML and
+              technical <strong>SEO</strong>, ensuring a clear and
+              well-structured layout that search engines can easily understand.
+              Solid <strong>SEO</strong> foundations right from the development
+              stage, helping pages perform better in search results.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- SECTION PORTFOLIO -->
+      <!-- FIX : id="portfolio" placé sur la <section> (était sur le <h2>) -->
+      <section id="portfolio">
+        <h2>Portfolio</h2>
+        <div class="carousel-wrapper" id="carouselWrapper">
+          <!-- FIX : bouton prev ajouté (manquant — JS plantait avec null) -->
+          <button
+            class="carousel-btn"
+            id="btnPrev"
+            aria-label="Slide précédent"
+          >
+            <i class="fa-solid fa-chevron-left"></i>
+          </button>
+
+          <div class="carousel-track" id="carouselTrack">
+            <!-- Card 1 -->
+            <div class="portfolio-card">
+              <div class="card-image">
+                <img
+                  src="https://via.placeholder.com/320x200?text=E-Commerce+Store"
+                  alt="E-Commerce Store"
+                />
+              </div>
+              <div class="card-content">
+                <h3>E-Commerce Store</h3>
+                <p>
+                  A fully responsive e-commerce platform built with HTML5, CSS3,
+                  and JavaScript. Features include product filtering, shopping
+                  cart, and smooth checkout experience.
+                </p>
+                <div class="card-tech">
+                  <span>HTML5</span>
+                  <span>CSS3</span>
+                  <span>JavaScript</span>
+                </div>
+                <a href="#" class="card-link">
+                  View Project <i class="fa-solid fa-arrow-right"></i>
+                </a>
+              </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="portfolio-card">
+              <div class="card-image">
+                <img
+                  src="https://via.placeholder.com/320x200?text=Blog+Platform"
+                  alt="Blog Platform"
+                />
+              </div>
+              <div class="card-content">
+                <h3>Blog Platform</h3>
+                <p>
+                  Modern blog platform with responsive design and optimized
+                  performance. Includes article categorization, search
+                  functionality, and dark mode theme.
+                </p>
+                <div class="card-tech">
+                  <span>HTML5</span>
+                  <span>Tailwind CSS</span>
+                  <span>JavaScript</span>
+                </div>
+                <a href="#" class="card-link">
+                  View Project <i class="fa-solid fa-arrow-right"></i>
+                </a>
+              </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="portfolio-card">
+              <div class="card-image">
+                <img
+                  src="https://via.placeholder.com/320x200?text=Task+Manager"
+                  alt="Task Manager"
+                />
+              </div>
+              <div class="card-content">
+                <h3>Task Manager App</h3>
+                <p>
+                  Interactive task management application with drag-and-drop
+                  functionality. Features include priority levels, due dates,
+                  and local storage persistence.
+                </p>
+                <div class="card-tech">
+                  <span>HTML5</span>
+                  <span>CSS3</span>
+                  <span>JavaScript ES6</span>
+                </div>
+                <a href="#" class="card-link">
+                  View Project <i class="fa-solid fa-arrow-right"></i>
+                </a>
+              </div>
+            </div>
+
+            <!-- Card 4 -->
+            <div class="portfolio-card">
+              <div class="card-image">
+                <img
+                  src="https://via.placeholder.com/320x200?text=Portfolio+Website"
+                  alt="Portfolio Website"
+                />
+              </div>
+              <div class="card-content">
+                <h3>Portfolio Website</h3>
+                <p>
+                  Clean and elegant portfolio website showcasing projects and
+                  skills. Fully responsive with smooth animations and optimized
+                  for SEO performance.
+                </p>
+                <div class="card-tech">
+                  <span>HTML5</span>
+                  <span>CSS3</span>
+                  <span>Responsive Design</span>
+                </div>
+                <a href="#" class="card-link">
+                  View Project <i class="fa-solid fa-arrow-right"></i>
+                </a>
+              </div>
+            </div>
+
+            <!-- Card 5 -->
+            <div class="portfolio-card">
+              <div class="card-image">
+                <img
+                  src="https://via.placeholder.com/320x200?text=Weather+Dashboard"
+                  alt="Weather Dashboard"
+                />
+              </div>
+              <div class="card-content">
+                <h3>Weather Dashboard</h3>
+                <p>
+                  Real-time weather application with API integration. Features
+                  include location search, forecast data, and beautiful data
+                  visualizations.
+                </p>
+                <div class="card-tech">
+                  <span>HTML5</span>
+                  <span>CSS3</span>
+                  <span>API Integration</span>
+                </div>
+                <a href="#" class="card-link">
+                  View Project <i class="fa-solid fa-arrow-right"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- FIX : bouton next ajouté (manquant — JS plantait avec null) -->
+          <button class="carousel-btn" id="btnNext" aria-label="Slide suivant">
+            <i class="fa-solid fa-chevron-right"></i>
+          </button>
+
+          <!-- FIX : dots ajoutés (manquants — JS plantait avec querySelectorAll vide) -->
+          <div class="carousel-dots">
+            <span class="control-dot active" aria-label="Slide 1"></span>
+            <span class="control-dot" aria-label="Slide 2"></span>
+            <span class="control-dot" aria-label="Slide 3"></span>
+            <span class="control-dot" aria-label="Slide 4"></span>
+            <span class="control-dot" aria-label="Slide 5"></span>
+          </div>
+        </div>
+      </section>
+
+      <!-- SECTION CONTACT -->
+      <!-- FIX : section absente alors que le lien nav #contact y pointait -->
+      <section id="contact">
+        <h2>Contact Me</h2>
+        <div class="contact-inner">
+          <p>Have a project in mind? Let's work together.</p>
+          <span id="call">
+            <a href="tel:+221789253009">
+              Call me <i class="fa fa-phone"></i>
+            </a>
+          </span>
+        </div>
+      </section>
+    </main>
+
+    <!-- FIX : balise <script> manquante — le JS ne se chargeait jamais -->
+    <script src="main.js"></script>
+  </body>
+</html>
