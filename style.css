@@ -345,7 +345,7 @@ nav > a {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  height: 100vh;
+  height: 100dvh;
   display: flex;
   flex-direction: column;
   gap: clamp(1rem, 2vw, 2rem);
